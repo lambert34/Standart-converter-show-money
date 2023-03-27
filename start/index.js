@@ -3,5 +3,7 @@ const currencySelectorNode = document.querySelector('.js-currency-selector');
 const outputNode = document.querySelector('.js-output');
 
 valueInputNode.addEventListener('input', function() {
-    console.log(valueInputNode.value);
+    const rub = Number(valueInputNode.value);
+    const currency = currencySelectorNode.value;
+    const result = convert(rub, currency);
 })
