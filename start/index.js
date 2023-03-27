@@ -7,16 +7,18 @@ function getInput() {
         rub: Number(valueInputNode.value),
         currency: currencySelectorNode.value;
     }
-}
+};
+
+function render(result) {
+    outputNode.innerText = result;
+};
 
 valueInputNode.addEventListener('input', function() {
-    const result = convert(rub, currency);
-
-    outputNode.innerText = result;
+    const result = convert(getInput());
+    render(result);
 });
 
 currencySelectorNode.addEventListener('change', function() {
-    const result = convert(rub, currency);
-
-    outputNode.innerText = result;
-})
+    const result = convert(getInput());
+    render(result);
+});
