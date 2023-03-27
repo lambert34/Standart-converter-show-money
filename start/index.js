@@ -8,4 +8,12 @@ valueInputNode.addEventListener('input', function() {
     const result = convert(rub, currency);
 
     outputNode.innerText = result;
+});
+
+currencySelectorNode.addEventListener('change', function() {
+    const rub = Number(valueInputNode.value);
+    const currency = currencySelectorNode.value;
+    const result = convert(rub, currency);
+
+    outputNode.innerText = result;
 })
