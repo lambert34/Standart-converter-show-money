@@ -1,0 +1,28 @@
+body {
+    background: url(/img/e83e755s-960.jpg) no-repeat;
+    background-color: #1b681f;
+}
+
+.js-value-input {
+    background: transparent;
+    line-height: 19px;
+    margin-bottom: 8px;
+    font-size: 25px;
+    border-color: #c7c413;
+    border-radius: 5px;
+    border-width: 2px;
+    color: rgb(245, 102, 46);
+}
+.js-currency-selector {
+    width: 60px;
+    height: 36px;
+    padding-top: 7px;
+    background: transparent;
+    border-color: #c7c413;
+    border-radius: 5px;
+    border-width: 2px;
+}
+.js-output {
+    font-size: 25px;
+    color: rgb(219, 33, 33);
+}
