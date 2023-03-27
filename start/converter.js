@@ -3,7 +3,7 @@ const RATES = {
     eur: 0.12
 }
 
-function convert(rub, currency) {
+function convert({ rub, currency }) {
     if (!RATES[currency]) {
         return null;
     }

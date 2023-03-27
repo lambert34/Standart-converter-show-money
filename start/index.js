@@ -5,7 +5,7 @@ const outputNode = document.querySelector('.js-output');
 function getInput() {
     return {
         rub: Number(valueInputNode.value),
-        currency: currencySelectorNode.value;
+        currency: currencySelectorNode.value
     }
 };
 
